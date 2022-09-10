@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body-container {
+  background-image: linear-gradient(to top left, #753682 0%, #381b6e 100%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.main-container {
+  position: relative;
+  background-color: white;
+  height: 30rem;
+  width: 55rem;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.player1,
+.player2 {
+  flex: 50%;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* transition: all 0.75s; */
+}
+
+.name {
+  position: relative;
+  padding-bottom: 3rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.player1-active {
+  background-color: plum;
+  font-weight: 900;
+}
+.player1-active .name {
+  font-weight: 700;
+}
+.player1-active .score {
+  font-weight: 400;
+}
+
+.player1-active .current {
+  opacity: 1;
+}
+
+.player--winner {
+  background-color: #ccbec9;
+}
+
+.player--winner .name {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #c7365f;
+}
+.player--winner .score1 {
+  font-weight: 700;
+  color: #c7365f;
+}
+.current {
+  background-color: #381b6e;
+  padding: 20px;
+  margin-top: 5rem;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.score2,
+.score1 {
+  /* padding-top: 10px; */
+  /* margin-left: 3rem; */
+  font-size: 2rem;
+}
+
+.player-current {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.current-score1,
+.current-score2 {
+  padding-top: 10px;
+  margin-left: 3rem;
+  font-size: 1.5rem;
+}
+
+.btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  border-radius: 50px;
+  padding: 3px 9px;
+  background-color: #7548c9;
+  cursor: pointer;
+}
+
+.dice {
+  position: absolute;
+  left: 50%;
+  top: 10.5rem;
+  transform: translateX(-50%);
+  height: 6rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+}
+
+.btn--new {
+  top: 4rem;
+  outline: none;
+}
+.btn--roll {
+  bottom: 5rem;
+}
+.btn--hold {
+  bottom: 3rem;
+}
